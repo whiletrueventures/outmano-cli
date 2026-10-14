@@ -1,0 +1,42 @@
+{
+  "name": "outmano",
+  "version": "0.1.0",
+  "description": "Command-line client for Outmano competitor monitoring. Wraps the customer MCP at outmano.com/mcp.",
+  "keywords": [
+    "outmano",
+    "competitive-intelligence",
+    "competitor-analysis",
+    "competitor-monitoring",
+    "battlecard",
+    "pricing",
+    "mcp",
+    "cli",
+    "agent-skill"
+  ],
+  "homepage": "https://github.com/whiletrueventures/outmano-cli#readme",
+  "bugs": {
+    "url": "https://github.com/whiletrueventures/outmano-cli/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whiletrueventures/outmano-cli.git"
+  },
+  "license": "MIT",
+  "author": "while (true) <hello@outmano.com>",
+  "bin": {
+    "outmano": "bin/outmano.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "SKILL.md"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "outmano": "node bin/outmano.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

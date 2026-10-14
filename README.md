@@ -1,3 +1,10 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset=".github/logo-dark.svg">
+    <img src=".github/logo-light.svg" alt="Outmano" width="240">
+  </picture>
+</p>
+
 # Outmano CLI
 
 Command-line client for [Outmano](https://outmano.com) competitor monitoring. Battlecards, pricing changes, reviews, news and weekly action plans from your terminal or AI agent.

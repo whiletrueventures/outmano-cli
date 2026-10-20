@@ -7,6 +7,9 @@
 
 # Outmano CLI
 
+[![npm version](https://img.shields.io/npm/v/outmano)](https://www.npmjs.com/package/outmano)
+[![tests](https://github.com/whiletrueventures/outmano-cli/actions/workflows/test.yml/badge.svg)](https://github.com/whiletrueventures/outmano-cli/actions/workflows/test.yml)
+
 Command-line client for [Outmano](https://outmano.com) competitor monitoring. Battlecards, pricing changes, reviews, news and weekly action plans from your terminal or AI agent.
 
 The CLI is a thin client over the Outmano customer MCP at `https://outmano.com/mcp`. It uses the same API keys you create in the app under **Integrations → MCP**. It is read-only and has no runtime dependencies.
@@ -59,9 +62,15 @@ There is no dedicated "list competitors" MCP tool. `competitors` uses the SEO sn
 
 Shared flags: `--json`, `--help`, `--limit`, `--offset`. See `outmano help <command>` for the rest.
 
-## Agent skill
+## Agents
 
-[SKILL.md](./SKILL.md) is the agent-facing command list. Point your agent at it, or install the package and let the agent run `outmano --help`.
+[SKILL.md](./SKILL.md) tells an AI agent when and how to use the CLI. Install it as a skill:
+
+```bash
+npx skills add whiletrueventures/outmano-cli
+```
+
+Or point the agent at the file directly. The agent still needs `OUTMANO_API_KEY` in its environment.
 
 ## Development
 
